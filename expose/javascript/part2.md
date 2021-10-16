@@ -30,3 +30,6 @@
     E. false, true becomes number 1. 1 != 2
     F. true, boolean conversion of a non 0 number is true
 15. == is for equality checks where implicit conversions occur, while === is strict equality and there is no implicit conversion. types must match too
+16. (js file)
+17. Init newArr, in each iteration of loop, take the respective element of modifyArray and use the callback function to execute doSomething which doubles the element num. Push that to the newArr, which is returned at the end as [2,4,6]
+18. 
