@@ -10,3 +10,23 @@
 10. 3 (length was set once to prices.length using keyword const and it is declared in the same block scope as when it was console.logged so it will output correctly)
 11. [It will return an array discounted after the math logic in the code (which essentially divides the prices by 2 and pushes them into the discountedPrices array). Even though discounted is declared constant, it just means you cannot reassign the variable. However, this const keyword has no bearing on what you can do with the array contents, so you are allowed to push as normal. Since discounted array was declared in the same block scope as the return statement using discounted, this works (with keyword const) 
 12. 
+    A. student.name;
+    B. student["Grad Year"];
+    C. student["greeting"];
+    D. student["Favorite Teacher"]["name"];
+    E. student["courseLoad"][0];
+13. A. 32; 2 was converted to string and they were concatenated with +
+    B. 1; the minus sign indicated that this was a mathematical operation so '3' was converted to an int and 3-2=1
+    C. 3; null becomes numerically converted to 0 when in a mathematical operation
+    D. 3null; two strings become concatenated
+    E. 4; true is a bool which has a numerical conversion of 1 in a mathematical operation
+    F. 0; null is 0 and so is false in a mathematical operation, 0+0=0
+    G. 3undefined; two strings become concatenated
+    H. NaN; this is a mathematical operation but numerically undefined becomes NaN and any operation with NaN becomes NaN
+14. A. true, '2' becomes 2 & 2>1
+    B. false, '2' is actually > '12' because it's compared lexographically
+    C. true, '2' is converted to a number
+    D. false, their types are different for strict equality
+    E. false, true becomes number 1. 1 != 2
+    F. true, boolean conversion of a non 0 number is true
+15. == is for equality checks where implicit conversions occur, while === is strict equality and there is no implicit conversion. types must match too
