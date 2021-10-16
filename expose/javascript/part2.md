@@ -32,4 +32,8 @@
 15. == is for equality checks where implicit conversions occur, while === is strict equality and there is no implicit conversion. types must match too
 16. (js file)
 17. Init newArr, in each iteration of loop, take the respective element of modifyArray and use the callback function to execute doSomething which doubles the element num. Push that to the newArr, which is returned at the end as [2,4,6]
-18. 
+18. (js file)
+19. 1
+    4
+    3
+    2
