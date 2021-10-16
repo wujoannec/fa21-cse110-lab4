@@ -1,0 +1,3 @@
+1. Outputs "3" since i was declared with keyword var so it exists outside of the function scope and it leaves the function when i got incremented to 3
+2. Outputs "150" since the last iteration of the for loop body did discountedPrice=300*(0.5) essentially and since discountedPrice was declared as a var, the variable exists outside of the loop.
+3.  Also outputs "150" since the last iteration of the for loop body did Math.round(300*100)/100 which turns into Math.round(30000)/100 which becomes 30000/100 which becomes 300 essentially and since finalPrice was declared as a var, the variable exists outside of the loop.
