@@ -1,0 +1,2 @@
+1. The bug was that the data was being added in as strings instead of ints so it did string concatenation
+2. I would fix it by editing line 11 to convert the string numbers to actual numbers using line "let result = Number(num1) + Number(num2)" so that it does arithmetic instead of string appending.
