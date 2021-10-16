@@ -1,3 +1,12 @@
 1. Outputs "3" since i was declared with keyword var so it exists outside of the function scope and it leaves the function when i got incremented to 3
 2. Outputs "150" since the last iteration of the for loop body did discountedPrice=300*(0.5) essentially and since discountedPrice was declared as a var, the variable exists outside of the loop.
 3.  Also outputs "150" since the last iteration of the for loop body did Math.round(300*100)/100 which turns into Math.round(30000)/100 which becomes 30000/100 which becomes 300 essentially and since finalPrice was declared as a var, the variable exists outside of the loop.
+4.  [50,100,150] It will return an array since the math logic in the code (essentially divides the prices by 2 and pushes those discounted prices into the discounted array). Since discounted array was declared in the same function scope as the return statement using discounted, this works (with keyword var) 
+5.  Error (variable i using keyword let doesn't exist out of the block scope of the for loop block)
+6.  Error (variable discountedPrice using keyword let doesn't exist out of the block scope of the for loop block)
+7.  Outputs "150" since finalPrice was updated inside very last iteration of the for loop to 150 and then since the console.log and declaration are in the same block scope outside of the loop (using keyword let), the variable still exists when the for loop is done
+8.  [50,100,150] It will return an array since the math logic in the code (essentially divides the prices by 2 and pushes those discounted prices into the discounted array). Since discounted array was declared in the same block scope as the return statement using discounted, this works (with keyword let) 
+9.  Error (variable i using keyword let doesn't exist out of the block scope of the for loop block)
+10. 3 (length was set once to prices.length using keyword const and it is declared in the same block scope as when it was console.logged so it will output correctly)
+11. [It will return an array discounted after the math logic in the code (which essentially divides the prices by 2 and pushes them into the discountedPrices array). Even though discounted is declared constant, it just means you cannot reassign the variable. However, this const keyword has no bearing on what you can do with the array contents, so you are allowed to push as normal. Since discounted array was declared in the same block scope as the return statement using discounted, this works (with keyword const) 
+12. 
